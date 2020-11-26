@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.TestInstance.*;
 @TestInstance(Lifecycle.PER_CLASS)
 
 public class SeleniumTest {
-    private BrowserGetter browserGetter = new BrowserGetter();
+    private final BrowserGetter browserGetter = new BrowserGetter();
     private WebDriver webDriver;
 
     @BeforeAll
